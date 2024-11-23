@@ -1,0 +1,94 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body and Basic Layout */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #333;
+}
+
+/* Main Container */
+.main-container {
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    width: 100%;
+    max-width: 600px;
+    text-align: center;
+}
+
+/* Header */
+h1 {
+    font-size: 2.2em;
+    margin-bottom: 20px;
+    color: #2d3e50;
+}
+
+/* File Upload Section */
+.file-upload {
+    margin-bottom: 20px;
+}
+
+.file-label {
+    font-size: 1.2em;
+    font-weight: 600;
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    display: inline-block;
+}
+
+.file-label i {
+    margin-right: 8px;
+}
+
+input[type="file"] {
+    display: none;
+}
+
+/* Upload Button */
+.upload-btn {
+    background-color: #007BFF;
+    color: white;
+    padding: 15px 30px;
+    font-size: 1.1em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.upload-btn:hover {
+    background-color: #0056b3;
+}
+
+/* Prediction Result */
+.prediction-container {
+    margin-top: 20px;
+}
+
+.prediction-result {
+    background-color: #f0f8ff;
+    padding: 15px;
+    border-radius: 5px;
+    font-size: 1.3em;
+    color: #333;
+}
+
+/* No Prediction Message */
+.no-prediction-container {
+    font-size: 1.2em;
+    color: #888;
+}

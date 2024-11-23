@@ -1,0 +1,46 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upload Food Image</title>
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+    <!-- Font Awesome for icons (optional) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="main-container">
+        <div class="upload-container">
+            <h1>Upload Food Image for Prediction</h1>
+            <form action="#" method="post" enctype="multipart/form-data">
+                {% csrf_token %}
+                <div class="file-upload">
+                    <label for="food_image" class="file-label">
+                        <i class="fas fa-upload"></i> Choose a Food Photo
+                    </label>
+                    <input type="file" id="food_image" name="food_image" accept="image/*" required>
+                </div>
+                <button type="submit" class="upload-btn">Upload</button>
+            </form>
+            
+            {% if food %}
+            <div class="prediction-container">
+                <h2>Prediction Result:</h2>
+                <div class="prediction-result">
+                    <p>{{ food }}</p>
+                    <div class="prediction-result">
+                        <p>{{ cal }}</p>
+                </div>
+            </div>
+            {% else %}
+            <div class="no-prediction-container">
+                <p>Please upload an image to get a prediction.</p>
+            </div>
+            {% endif %}
+        </div>
+    </div>
+</body>
+</html>
