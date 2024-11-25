@@ -10,14 +10,6 @@ django-cloudinary-storage==0.3.0
 django-storages==1.14.4
 flatbuffers==24.3.25
 gast==0.6.0
-google-api-core==2.23.0
-google-auth==2.36.0
-google-cloud-core==2.4.1
-google-cloud-storage==2.18.2
-google-crc32c==1.6.0
-google-pasta==0.2.0
-google-resumable-media==2.7.2
-googleapis-common-protos==1.66.0
 grpcio==1.68.0
 h5py==3.12.1
 idna==3.10
